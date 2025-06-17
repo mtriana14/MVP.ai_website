@@ -1,0 +1,20 @@
+[
+    {
+        "id":0,
+        "image":"/assets/trade.png",
+        "title":"Bond Leveling System",
+        "para":"The more you connect, the stronger your bond. Unlock deeper dialogue, new reactions, and a relationship that evolves over time."
+    },
+      {
+        "id":1,
+        "image":"/assets/brain.png",
+        "title":"Utility Meets Friendship",
+        "para":"Your MVP helps you think, grow, and stay inspired, whether you’re studying, venting, or building something big."
+    },
+      {
+        "id":2,
+        "image":"/assets/mask.png",
+        "title":"Personality-Enhanced Conversation",
+        "para":"Every MVP speaks with style. Warm, witty, or wise, your companion feels real—and evolves as your bond deepens."
+    }
+]
