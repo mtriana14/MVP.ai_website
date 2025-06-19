@@ -1,4 +1,3 @@
-// app/api/send-email/route.ts
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
 import { EmailTemplate } from "../../../utils/emailTemplate";
@@ -6,9 +5,10 @@ import { EmailTemplate } from "../../../utils/emailTemplate";
 const resend = new Resend(process.env.RESEND_API_KEY);
 const SENDER_EMAIL = "mvp.aiceo@gmail.com";
 
-export async function POST(req) {
+export async function POST(req: Request): Promise<Response> {
   const { email } = await req.json();
-console.log("email",email)
+  console.log("email", email);
+
   if (!email) {
     return NextResponse.json({ error: "Email is required" }, { status: 400 });
   }
