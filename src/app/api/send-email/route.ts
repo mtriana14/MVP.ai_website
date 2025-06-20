@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
-import { EmailTemplate } from "../../../../utils/emailTemplate";
+import { EmailTemplate } from "../../../utils/emailTemplate";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 const SENDER_EMAIL = "mvp.aiceo@gmail.com";
