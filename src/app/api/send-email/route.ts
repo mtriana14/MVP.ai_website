@@ -1,6 +1,38 @@
-export async function POST(): Promise<Response> {
-  return new Response(JSON.stringify({ message: "API Route Working!" }), {
-    status: 200,
-    headers: { "Content-Type": "application/json" },
-  });
+import { Resend } from "resend";
+import { NextResponse } from "next/server";
+import { EmailTemplate } from "../../../../utils/emailTemplate";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
+const SENDER_EMAIL = "mvp.aiceo@gmail.com";
+
+export async function POST(req: Request): Promise<Response> {
+  const { email } = await req.json();
+
+  if (!email) {
+    return NextResponse.json({ error: "Email is required" }, { status: 400 });
+  }
+
+  try {
+    await resend.emails.send({
+      from: "hello@youraimvp.com",
+      to: email,
+      subject: "🎉 Welcome to MVP.ai!",
+      html: EmailTemplate({ values: { email, isAdmin: false } }),
+    });
+
+    await resend.emails.send({
+      from: "hello@youraimvp.com",
+      to: SENDER_EMAIL,
+      subject: "🚨 New User Signup on MVP.ai",
+      html: EmailTemplate({ values: { email, isAdmin: true } }),
+    });
+
+    return NextResponse.json({ message: "Emails sent successfully" });
+  } catch (error) {
+    console.error("Error sending emails:", error);
+    return NextResponse.json(
+      { error: "Failed to send emails" },
+      { status: 500 }
+    );
+  }
 }
