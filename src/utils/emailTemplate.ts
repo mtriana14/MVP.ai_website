@@ -7,6 +7,8 @@ export const EmailTemplate = ({ values }: { values: EmailValues }): string => {
   const signupTime = new Date().toUTCString();
   const { email, isAdmin } = values;
 
+  const logoUrl = "https://mvp.ai/logo.png"; 
+
   if (isAdmin) {
     return `
     <!DOCTYPE html>
@@ -59,7 +61,7 @@ export const EmailTemplate = ({ values }: { values: EmailValues }): string => {
     </head>
     <body>
       <div class="container">
-        <img src="https://res.cloudinary.com/demo/image/upload/v1700000000/logo.svg" alt="MVP.ai Logo" class="logo">
+        <img src="${logoUrl}" alt="MVP.ai Logo" class="logo">
         <h2>📢 New User Signup Notification</h2>
         <p>A new user has successfully signed up on <strong>MVP.ai</strong>.</p>
         <p><span class="highlight">User Details:</span></p>
@@ -120,7 +122,7 @@ export const EmailTemplate = ({ values }: { values: EmailValues }): string => {
   </head>
   <body>
     <div class="container">
-      <img src="https://res.cloudinary.com/demo/image/upload/v1700000000/logo.svg" alt="MVP.ai Logo" class="logo">
+      <img src="${logoUrl}" alt="MVP.ai Logo" class="logo">
       <h1>Welcome!</h1>
       <p>You've successfully joined <strong>MVP.ai</strong>.</p>
       <p>We're excited to have you on board. If you have any questions, feel free to reach out to our team.</p>
