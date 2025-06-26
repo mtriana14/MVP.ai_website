@@ -7,7 +7,7 @@ export const EmailTemplate = ({ values }: { values: EmailValues }): string => {
   const signupTime = new Date().toUTCString();
   const { email, isAdmin } = values;
 
-  const logoUrl = "https://youraimvp.com/logo.png";
+  const logoUrl = "/assets/officiamvpai_logo.png";
 
   if (isAdmin) {
     return `
