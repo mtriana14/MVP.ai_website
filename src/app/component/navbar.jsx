@@ -11,7 +11,7 @@ function navbar() {
     <div className="bg-[#1E0E62] lg:p-3 p-5 w-full overflow-x-hidden">
       <div className="xl:w-[90%] mx-auto flex items-center justify-between">
         <Image
-          src="/logo.svg"
+          src="/assets/officiamvpai_logo.png"
           alt="logo"
           width={79}
           height={58}
