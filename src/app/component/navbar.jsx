@@ -11,7 +11,7 @@ function navbar() {
     <div className="bg-[#1E0E62] lg:p-3 p-5 w-full overflow-x-hidden">
       <div className="xl:w-[90%] mx-auto flex items-center justify-between">
         <Image
-          src="/assets/officiamvpai_logo.png"
+          src="/logo.svg"
           alt="logo"
           width={79}
           height={58}
@@ -20,6 +20,9 @@ function navbar() {
         <div className="hidden md:block">
           <a className="text-white font-bold underline underline-offset-2 decoration-[1px] cursor-pointer">
             Home
+          </a>
+          <a href="/privacy" className="text-white font-bold underline underline-offset-2 decoration-[1px] cursor-pointer ml-2">
+            Privacy Policy
           </a>
         </div>
         <div className="block md:hidden">
@@ -74,7 +77,7 @@ function navbar() {
       <h2 className="text-4xl md:text-6xl font-bold z-10">Home</h2>
     </div>
     <div className="flex justify-between px-4 pb-4 text-sm text-gray-600 font-dm font-bold">
-      <a href="#" className="underline underline-offset-2">
+      <a href="/privacy" className="underline underline-offset-2">
         Privacy Policy
       </a>
       <a href="#" className="underline underline-offset-2">
