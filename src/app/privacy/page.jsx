@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import CompanionGuide from "../component/companionguide";
+import CompanionGuide from "../component/CompanionGuide";
 
 const Privacy = () => {
   return (
