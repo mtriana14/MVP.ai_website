@@ -1,27 +1,10 @@
 import Head from "next/head";
 import React from "react";
+import CompanionGuide from "../component/companionguide";
 
 const Privacy = () => {
   return (
     <>
-      
-        
-Conversation starred. Conversation opened. 1 unread message.
-
-Skip to content
-Using Gmail with screen readers
-1 of 9,904
-Privacy Policy
-Inbox
-
-Jordan Poyner "bigibo777@gmail.com"
-Attachments
-Sun, Jul 13, 10:26 PM (3 hours ago)
-to me
-
-
- One attachment
-  •  Scanned by Gmail
 <style>
  {`[data-custom-class='body'], [data-custom-class='body'] * {
           background: transparent !important;
@@ -77,8 +60,6 @@ word-break: break-word !important;
    <strong>
     <span>
      <span>
-      Last updated
-      June 05, 2025
      </span>
     </span>
    </strong>
@@ -5695,6 +5676,7 @@ word-break: break-word !important;
 </div>
 cleaned_privacy_policy.html
 Displaying cleaned_privacy_policy.html.
+<CompanionGuide />
       
     </>
   );

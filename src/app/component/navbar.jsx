@@ -17,8 +17,8 @@ function navbar() {
           height={58}
           className="lg:w-[79px] lg:h-[58px] w-[60px] h-[40px]"
         />
-        <div className="hidden md:block">
-          <a className="text-white font-bold underline underline-offset-2 decoration-[1px] cursor-pointer">
+        <div className="hidden md:block flex items-center justify-center space-x-4">
+          <a href="#" className="text-white font-bold underline underline-offset-2 decoration-[1px] cursor-pointer">
             Home
           </a>
           <a href="/privacy" className="text-white font-bold underline underline-offset-2 decoration-[1px] cursor-pointer ml-2">

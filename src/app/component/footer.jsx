@@ -160,7 +160,7 @@ function Footer() {
             />
             </Link>
 
-            <Link href="https://discord.gg/j5DD23kHw2">
+            <Link href="https://discord.gg/NhkbGVMt">
             <Image
               src="/assets/discord.svg"
               alt="Discord"
