@@ -8,7 +8,7 @@ function navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="bg-[#1E0E62] lg:p-3 p-5 w-full overflow-x-hidden">
+    <div className="bg-[#1A2E5C] lg:p-3 p-5 w-full overflow-x-hidden">
       <div className="xl:w-[90%] mx-auto flex items-center justify-between">
         <Image
           src="/logo.svg"
@@ -17,12 +17,15 @@ function navbar() {
           height={58}
           className="lg:w-[79px] lg:h-[58px] w-[60px] h-[40px]"
         />
-        <div className="hidden md:block flex items-center justify-center space-x-4">
-          <a href="#" className="text-white font-bold underline underline-offset-2 decoration-[1px] cursor-pointer">
+        <div className="hidden md:block">
+          <a href="/" className="text-white font-bold underline underline-offset-2 decoration-[1px] cursor-pointer">
             Home
           </a>
           <a href="/privacy" className="text-white font-bold underline underline-offset-2 decoration-[1px] cursor-pointer ml-2">
             Privacy Policy
+          </a>
+          <a href="/datadeletion" className="text-white font-bold underline underline-offset-2 decoration-[1px] cursor-pointer ml-2">
+            Data
           </a>
         </div>
         <div className="block md:hidden">
