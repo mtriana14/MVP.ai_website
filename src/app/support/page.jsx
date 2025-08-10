@@ -5,8 +5,6 @@ import support_img from '../../../public/assets/support_img.png'
 const Support = () => {
   return (
     <div className="w-full min-h-screen bg-[#1A2E5C] text-white overflow-x-hidden">
-      {/* Header image — show full image on small screens, cover from sm+ */}
-      {/* Header image — full width on mobile, cover on larger screens */}
 <div className="w-screen leading-none">
   <Image
     src={support_img}
