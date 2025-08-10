@@ -33,6 +33,10 @@ function Navbar() {
           <Link href="/datadeletion" className={linkStyle("/datadeletion")}>
             Data
           </Link>
+
+          <Link href="/support" className={linkStyle("/support")}>
+            Support
+          </Link>
         </div>
 
         
@@ -51,6 +55,9 @@ function Navbar() {
               </Link>
               <Link href="/datadeletion" className={`text-4xl md:text-6xl font-bold z-10 ${pathname === "/datadeletion" ? "underline" : ""}`}>
                 Data
+              </Link>
+              <Link href="/support" className={`text-4xl md:text-6xl font-bold z-10 ${pathname === "/support" ? "underline" : ""}`}>
+                Support
               </Link>
             </div>
 
