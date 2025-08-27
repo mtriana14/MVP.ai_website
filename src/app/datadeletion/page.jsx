@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import point from "../../../public/assets/point.png";
-import CompanionGuide from "../component/companionguide";
+import CompanionGuide from "../component/companionguide.jsx";
 
 const DataDeletion = () => {
   useEffect(() => {
