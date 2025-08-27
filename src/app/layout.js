@@ -18,13 +18,13 @@ const geistMono = Geist_Mono({
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
-  weight: ['400', '500', '700', '800'],
-  variable: '--font-dm-sans',
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-dm',
 });
 
 const urbanist = Urbanist({
   subsets: ['latin'],
-  weight: ['400', '600', '700'],
+  weight: ['400', '500', '600', '700', '800', '900'],
   variable: '--font-urbanist',
 });
 
