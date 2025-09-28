@@ -15,19 +15,19 @@ function Navbar() {
     }`;
 
   return (
-    <div className="bg-[#1A2E5C] lg:p-3 p-5 w-full overflow-x-hidden">
+    <header className="bg-[#1A2E5C] lg:p-3 p-5 w-full overflow-x-hidden">
       <div className="xl:w-[90%] mx-auto flex items-center justify-between">
-        <Image
-          src="/logo.svg"
-          alt="logo"
-          width={79}
-          height={58}
-          className="lg:w-[79px] lg:h-[58px] w-[60px] h-[40px]"
-          priority
-        />
-
-       
-        <div className="hidden md:block space-x-4">
+        <Link href="/" aria-label="MVP.ai Home">
+          <Image
+            src="/logo.svg"
+            alt="MVP.ai logo"
+            width={79}
+            height={58}
+            className="lg:w-[79px] lg:h-[58px] w-[60px] h-[40px]"
+            priority
+          />
+        </Link>
+        <nav className="hidden md:block space-x-4" aria-label="Primary navigation">
           <Link href="/" className={linkStyle("/")}>
             Home
           </Link>
@@ -48,29 +48,41 @@ function Navbar() {
           <Link href="/support" className={linkStyle("/support")}>
             Support
           </Link>
-        </div>
-
-     
+        </nav>
         <div className="block md:hidden">
           <button
             className="text-white transition duration-300 ease-in-out"
             onClick={() => setIsMenuOpen(true)}
             aria-label="Open menu"
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-menu"
           >
             <FaBars className="w-8 h-8" />
           </button>
         </div>
-
         {isMenuOpen && (
-          <div className="fixed inset-0 z-50 bg-white flex flex-col overflow-hidden">
+          <nav
+            id="mobile-menu"
+            className="fixed inset-0 z-50 bg-white flex flex-col overflow-hidden"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Mobile navigation"
+          >
             <div className="flex justify-between items-center p-4">
-              <Image src="/assets/KaiImage.png" alt="logo" width={53} height={53} />
+              <Link href="/" aria-label="MVP.ai Home">
+                <Image
+                  src="/assets/KaiImage.png"
+                  alt="MVP.ai logo"
+                  width={53}
+                  height={53}
+                />
+              </Link>
               <button
                 onClick={() => setIsMenuOpen(false)}
                 className="text-black text-3xl font-bold"
                 aria-label="Close menu"
               >
-                X
+                ×
               </button>
             </div>
 
@@ -103,7 +115,6 @@ function Navbar() {
                 Support
               </Link>
             </div>
-
             <div className="flex justify-between px-4 pb-4 text-sm text-gray-600 font-dm font-bold">
               <a
                 href="/privacy.pdf"
@@ -113,14 +124,14 @@ function Navbar() {
               >
                 Privacy Policy
               </a>
-              <a href="#" className="underline underline-offset-2">
+              <a href="/terms" className="underline underline-offset-2">
                 Terms and Conditions
               </a>
             </div>
-          </div>
+          </nav>
         )}
       </div>
-    </div>
+    </header>
   );
 }
 
