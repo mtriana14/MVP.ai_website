@@ -57,7 +57,7 @@ function Header() {
 
   return (
     <header
-      className="lg:bg-[url('/assets/head.png')] bg-[url('/assets/mobileheader.svg')] 
+      className="lg:bg-[url('/assets/head.jpg')] bg-[url('/assets/mobileheader.svg')] 
                  flex flex-col justify-center items-center bg-no-repeat bg-cover bg-center 
                  h-[calc(100vh-6vh)]"
       role="banner"

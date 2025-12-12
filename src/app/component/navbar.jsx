@@ -27,20 +27,17 @@ function Navbar() {
             priority
           />
         </Link>
-        <nav className="hidden md:block space-x-4" aria-label="Primary navigation">
+        <nav
+          className="hidden md:block space-x-4"
+          aria-label="Primary navigation"
+        >
           <Link href="/" className={linkStyle("/")}>
             Home
           </Link>
 
-          <a
-            href="/privacy.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white font-bold cursor-pointer"
-          >
+          <Link href="/privacy" className={linkStyle("/privacy")}>
             Privacy Policy
-          </a>
-
+          </Link>
           <Link href="/datadeletion" className={linkStyle("/datadeletion")}>
             Data
           </Link>
