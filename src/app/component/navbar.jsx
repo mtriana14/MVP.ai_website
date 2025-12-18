@@ -36,7 +36,7 @@ function Navbar() {
           </Link>
 
           <Link href="/privacy" className={linkStyle("/privacy")}>
-            Privacy Policy
+            Privacy Policy 
           </Link>
           <Link href="/datadeletion" className={linkStyle("/datadeletion")}>
             Data
