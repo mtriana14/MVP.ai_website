@@ -132,7 +132,7 @@ function Header() {
             />
           </a>
           <a
-            href="https://play.google.com"
+            href="https://apps.apple.com/us/app/mvp-ai/id6748925755"
             target="_blank"
             rel="noopener noreferrer"
           >
