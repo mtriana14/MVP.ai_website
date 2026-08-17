@@ -121,8 +121,8 @@ function Header() {
             <Image
               src="/assets/apple.svg"
               alt="Download MVP.ai on the Apple App Store"
-              width={219}
-              height={70}
+              width={120}
+              height={40}
               className="lg:w-[200px] lg:h-[70px] w-[130px] h-[40px]"
             />
           </a>
@@ -134,8 +134,8 @@ function Header() {
             <Image
               src="/assets/google.svg"
               alt="Get MVP.ai on Google Play"
-              width={219}
-              height={72}
+              width={180}
+              height={53}
               className="lg:w-[200px] lg:h-[70px] w-[130px] h-[40px]"
             />
           </a>
