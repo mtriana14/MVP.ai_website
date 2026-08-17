@@ -118,8 +118,8 @@ function Header() {
           className="gap-5 flex justify-center items-center mt-4"
           aria-label="Download links"
         >
-          <a
-            href="https://apps.apple.com"
+          
+            href="https://apps.apple.com/us/app/mvp-ai/id6748925755"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -131,8 +131,8 @@ function Header() {
               className="lg:w-[200px] lg:h-[70px] w-[130px] h-[40px]"
             />
           </a>
-          <a
-            href="https://apps.apple.com/us/app/mvp-ai/id6748925755"
+          
+            href="https://play.google.com/store/apps/details?id=com.mvp.untitled1mvpai&pcampaignid=web_share"
             target="_blank"
             rel="noopener noreferrer"
           >
