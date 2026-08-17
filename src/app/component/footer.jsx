@@ -71,10 +71,10 @@ function Footer() {
           id="footer-title"
           className="lg:text-[47px] text-[26px] text-[#9801FF] leading-none font-bold"
         >
-          Unlock Early Access
+          Unlock the MVP.ai World
         </h2>
         <p className="text-black mt-5 text-[15px]">
-          Be the first to experience the future of AI and human companionship.
+           Join to experience the future of AI and human companionship.
         </p>
         <form
           onSubmit={handleSubmit(onSubmit)}

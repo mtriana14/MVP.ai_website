@@ -106,7 +106,7 @@ function Header() {
             className="font-bold lg:w-[217px] cursor-pointer w-[180px] h-[60px] lg:h-[70px] border-b-10 border-t-4 border-x-6 bg-white rounded-full text-center text-sm lg:text-[16px] border-black"
             disabled={isLoading}
           >
-            {isLoading ? "Sending..." : "Unlock Early Access"}
+            {isLoading ? "Sending..." : "Join the community"}
           </motion.button>
         </form>
         <nav
