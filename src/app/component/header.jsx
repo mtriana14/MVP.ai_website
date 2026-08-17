@@ -57,9 +57,7 @@ function Header() {
 
   return (
     <header
-      className="lg:bg-[url('/assets/head.jpg')] bg-[url('/assets/mobileheader.svg')] 
-                 flex flex-col justify-center items-center bg-no-repeat bg-cover bg-center 
-                 h-[calc(100vh-6vh)]"
+      className="lg:bg-[url('/assets/head.jpg')] bg-[url('/assets/mobileheader.svg')] flex flex-col justify-center items-center bg-no-repeat bg-cover bg-center h-[calc(100vh-6vh)]"
       role="banner"
     >
       <motion.div
@@ -90,8 +88,7 @@ function Header() {
               id="email"
               type="email"
               placeholder="Your Email"
-              className="bg-[#DFDFDF] opacity-80 text-[16px] w-[250px] lg:w-[364px] h-[55px] lg:h-[63px] 
-                         rounded-full pl-5 text-black"
+              className="bg-[#DFDFDF] opacity-80 text-[16px] w-[250px] lg:w-[364px] h-[55px] lg:h-[63px] rounded-full pl-5 text-black"
               required
               aria-invalid={!!errors.email}
             />
@@ -106,9 +103,7 @@ function Header() {
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
             type="submit"
-            className="font-bold lg:w-[217px] cursor-pointer w-[180px] h-[60px] lg:h-[70px] 
-                       border-b-10 border-t-4 border-x-6 bg-white rounded-full text-center 
-                       text-sm lg:text-[16px] border-black"
+            className="font-bold lg:w-[217px] cursor-pointer w-[180px] h-[60px] lg:h-[70px] border-b-10 border-t-4 border-x-6 bg-white rounded-full text-center text-sm lg:text-[16px] border-black"
             disabled={isLoading}
           >
             {isLoading ? "Sending..." : "Unlock Early Access"}
